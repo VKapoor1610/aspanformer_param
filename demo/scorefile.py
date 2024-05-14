@@ -46,9 +46,9 @@ def outputOfModel(model , classifier , img0_path , img1_path ):
     # input_to_Mymodule.append((input_tensor, label))
     input_tensor = input_tensor.unsqueeze(0)
     out = classifier(input_tensor) 
-    _, predicted = torch.max(out.data, 1)
+    probability , predicted = torch.max(out.data, 1)
     predicted_label = predicted.tolist()[0]
-    return predicted_label
+    return predicted_label , probability
 
 
 
