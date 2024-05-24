@@ -1,14 +1,4 @@
-# ASpanFormer Implementation
-
-![Framework](assets/teaser.png)
-
-This is a PyTorch implementation of ASpanFormer for ECCV'22 [paper](https://arxiv.org/abs/2208.14201), “ASpanFormer: Detector-Free Image Matching with Adaptive Span Transformer”, and can be used to reproduce the results in the paper.
-
-This work focuses on detector-free image matching. We propose a hierarchical attention framework for cross-view feature update, which adaptively adjusts attention span based on region-wise matchability.
-
-This repo contains training, evaluation and basic demo scripts used in our paper.
-
-A large part of the code base is borrowed from the [LoFTR Repository](https://github.com/zju3dv/LoFTR) under its own separate license, terms and conditions.  The authors of this software are not responsible for the contents of third-party websites.
+# ASpanFormer + Classifier Model Implementation 
 
 ## Installation 
 ```bash
@@ -17,12 +7,14 @@ conda activate ASpanFormer
 ```
 
 ## Get started
-Download model weights from [here](https://drive.google.com/file/d/1eavM9dTkw9nbc-JqlVVfGPU5UvTTfc6k/view?usp=share_link)  
+Download aspanformer weights from [AspanFormer Weights](https://drive.google.com/file/d/1eavM9dTkw9nbc-JqlVVfGPU5UvTTfc6k/view?usp=share_link)  
+Download classifier weights from [Classifier Weights](https://drive.google.com/file/d/1LKKF_gYVbZUvyKuK_Mvw8WbV0nqMMTbL/view?usp=sharing)
 
 Extract weights by
 ```bash
 tar -xvf weights_aspanformer.tar
 ```
+Classifier weights are already extracted.
 
 A demo to match one image pair is provided. To get a quick start, 
 
